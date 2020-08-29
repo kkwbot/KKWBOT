@@ -2,7 +2,7 @@
 
 // Import the discord.js module
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const { prefix } = require('./config.json');
 const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
@@ -45,5 +45,5 @@ client.on('guildMemberAdd', member => {
   (Présence du Staff régulier, en semaine de 18h à 22h local, le w-e de 9h à 22h)
 https://discord.gg/JpeYeXW`);
 });
-//client.login(process.env.TOKEN)
-client.login('Njk0NTQyMzExNDg4NjE4NTA3.XoNI7w.GsV9XMM-Vb32YzAeENRPTzW_iUA');
+client.login(process.env.TOKEN)
+
